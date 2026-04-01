@@ -15,6 +15,73 @@ body {
   background-color: #f5f5f5;
 }
 
+.participants-card {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: #eef3ff;
+  border: 1px solid #d2d9ff;
+}
+
+.participants-card h5 {
+  margin-bottom: 10px;
+  color: #1a237e;
+  font-size: 1rem;
+}
+
+.participants-list {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  list-style: none;
+}
+
+.participants-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background-color: #f7f8ff;
+  line-height: 1.5;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+  color: #1f2d5c;
+  font-size: 0.95rem;
+}
+
+.participant-remove {
+  background: transparent;
+  border: 1px solid #c5cee5;
+  color: #5f6c8f;
+  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.participant-remove:hover {
+  background-color: #e4e9ff;
+  color: #2e3a7c;
+  border-color: #a8b4eb;
+}
+
+.no-participants {
+  margin: 0;
+  color: #5f6368;
+  font-style: italic;
+}
+
 header {
   text-align: center;
   padding: 20px 0;
